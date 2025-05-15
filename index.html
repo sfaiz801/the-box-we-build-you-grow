@@ -4,30 +4,963 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The-Box</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/style.min.css">
 
 </head>
 
 <body>
 
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Logo.png" alt="Company Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto column-gap-5 fs-6">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero position-relative">
+            <div id="carouselExampleDark" class="carousel  slide carousel-fade">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/Hero.svg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                        <div class="carousel-caption position-absolute d-none d-md-block  end-0  bg-primary">
+                            <h5 class="fs-5 fw-bold">Feature Projects 1</h5>
+                            <p class="fs-4 fw-regular">The National University of Architecture</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./images/Hero.svg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                        <div class="carousel-caption position-absolute d-none d-md-block  end-0  bg-primary">
+                            <h5 class="fs-5 fw-bold">Feature Projects 2</h5>
+                            <p class="fs-4 fw-regular">Lorem ipsum dolor sit amet second</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./images/Hero.svg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                        <div class="carousel-caption position-absolute d-none d-md-block  end-0  bg-primary">
+                            <h5 class="fs-5 fw-bold">Feature Projects 3</h5>
+                            <p class="fs-4 fw-regular">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators bottom-0 mb-0 d-md-none">
+                    <button class="custom-indicator bg-primary active" type="button"
+                        data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button class="custom-indicator bg-primary" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="custom-indicator bg-primary" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div
+                    class="position-absolute d-none end-0 bottom-0 d-md-flex align-items-center column-gap-1 carousel-btn-group">
+                    <button
+                        class="border-0 bg-neutral-800 py-2 text-white d-inline-flex column-gap-2 align-items-center justify-content-center"
+                        type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev"><img
+                            src="./icons/prev-btn.png" alt="prev button" class="d-none d-md-block">Back</button>
+                    <button
+                        class="border-0 bg-neutral-800 py-2 text-white d-inline-flex column-gap-2 align-items-center justify-content-center"
+                        type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">Next <img
+                            src="./icons/next-btn.png" alt="next button" class="d-none d-md-block"></button>
+                </div>
+
+                <div class="position-absolute w-100 left-0 heading-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-md-8 col-xl-5">
+                                <h1 class="h1 fs-sm-1 text-center text-md-start fw-semibold text-neutral-800">Building
+                                    things is our mission.</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="reputation pb-4 pt-5 pt-md-60 pb-md-84">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center mb-3 mb-md-50">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h2 class="fs-3 fw-bold ">Our Reputation</h2>
+                            </div>
+                        </div>
+                        <div
+                            class="row  justify-content-between column-gap-5  row-gap-3 row-gap-md-4 align-items-stretch">
+                            <div class="col-md-5 col-lg-3 flex-grow-1">
+                                <div class="card p-3 border-neutral-100 border-6 h-100">
+                                    <img class="mb-18 icon" src="./icons/headphone.png " alt="team icon">
+                                    <div class="mb-20">
+                                        <h5 class="card-title mb-18 fs-5 fw-bold text-neutral-700">Best Services</h5>
+                                        <p class="card-text text-neutral-400 fw-regular">Nullam senectus porttitor in
+                                            eget. Eget rutrum leo
+                                            interdum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-3 flex-grow-1">
+                                <div class="card p-3 border-neutral-100 border-6 h-100">
+                                    <img class="mb-18 icon" src="./icons/headphone.png" alt="team icon">
+                                    <div class=" mb-20">
+                                        <h5 class="card-title mb-18 fs-5 fw-bold text-neutral-700">Best Teams</h5>
+                                        <p class="card-text text-neutral-400 fw-regular">Cursus semper tellus volutpat
+                                            aliquet lacus. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 flex-grow-1">
+                                <div class="card p-3 border-neutral-100 border-6 h-100">
+                                    <img class="mb-18 icon" src="./icons/pencil.png" alt="team icon">
+                                    <div class="mb-20">
+                                        <h5 class="card-title mb-18 fs-5 fw-bold text-neutral-700">Best Designs</h5>
+                                        <p class="card-text text-neutral-400 fw-regular">Ultricies at ipsum nunc,
+                                            tristique nam lectus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about py-4 pt-lg-72 pb-lg-200">
+            <div class="container">
+                <div class="row flex-lg-nowrap align-items-center ">
+                    <div class="col-12 col-lg-9">
+                        <img class="img-fluid" src="./images/Oldman.png" alt="about image">
+                    </div>
+                    <div class="col-12 col-lg-5 ms-0 ms-lg-n220 text-center text-lg-start">
+                        <div class="bg-primary p-3 pt-lg-50 ps-lg-40 pb-lg-60 pe-lg-60  h-auto">
+                            <h2 class="fs-3 fw-bold text-white mb-3 mb-md-40">About us</h2>
+                            <p class="text-white fs-5 mb-3 mb-md-72">For more than 30 years we have been delivering
+                                world-class construction and
+                                we’ve built many lasting
+                                relationships along the way. We’ve matured into an industry leader and trusted resource
+                                for those seeking
+                                quality, innovation and reliability when building in the U.S.</p>
+
+                            <a href="#"
+                                class="btn border-0 btn bg-white text-primary py-3 px-20 rounded-1 fs-6 fw-semibold">More
+                                on Our
+                                History</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services py-4 pb-md-76 pt-md-44 bg-neutral-50">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="row justify-content-center mb-3 mb-md-36">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h2 class="fs-3 fw-bold ">Services</h2>
+                            </div>
+                        </div>
+                        <div class="row gap-3 gap-md-5 justify-content-between">
+                            <div
+                                class="col-12 col-md-5 col-lg-3 py-38 shadow-sm rounded-1 d-flex flex-column align-items-center gap-3 bg-white text-primary">
+                                <img class="icon" src="./icons/Construction.png" alt="construction icon">
+                                <div class="hr-divider"></div>
+                                <p class="fs-5 fw-semibold">Construction</p>
+                            </div>
+                            <div
+                                class="col-12 col-md-5 col-lg-3 py-38 shadow-sm rounded-1 d-flex flex-column align-items-center gap-3 bg-primary text-white">
+                                <img class="icon" src="./icons/renovation-icon.svg" alt="Renovation icon">
+                                <div class="hr-divider"></div>
+                                <p class="fs-5 fw-semibold">Renovation</p>
+                            </div>
+                            <div
+                                class="col-12 col-md-5 col-lg-3 py-38 shadow-sm rounded-1 d-flex flex-column align-items-center gap-3 bg-white text-primary">
+                                <img class="icon" src="./icons/Construction2.png" alt="Consultation icon">
+                                <div class="hr-divider"></div>
+                                <p class="fs-5 fw-semibold">Consultation</p>
+                            </div>
+                            <div
+                                class="col-12 col-md-5 col-lg-3 py-38 shadow-sm rounded-1 d-flex flex-column align-items-center gap-3 bg-primary text-white">
+                                <img class="icon" src="./icons/Repair Services.png" alt="Repair Services icon">
+                                <div class="hr-divider"></div>
+                                <p class="fs-5 fw-semibold">Repair Services</p>
+                            </div>
+                            <div
+                                class="col-12 col-md-5 col-lg-3 py-38 shadow-sm rounded-1 d-flex flex-column align-items-center gap-3 bg-white text-primary">
+                                <img class="icon" src="./icons/Architecture.png" alt="Architecture icon">
+                                <div class="hr-divider"></div>
+                                <p class="fs-5 fw-semibold">Architecture</p>
+                            </div>
+                            <div
+                                class="col-12 col-md-5 col-lg-3 py-38 shadow-sm rounded-1 d-flex flex-column align-items-center gap-3 bg-primary text-white">
+                                <img class="icon" src="./icons/Electric.png" alt="Electric icon">
+                                <div class="hr-divider"></div>
+                                <p class="fs-5 fw-semibold">Electric</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fact py-4 pb-lg-100 pt-lg-122">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-11">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12 col-lg-8 col-xl-6 order-1 order-lg-0">
+                                <div
+                                    class="fact-group d-flex gap-3 gap-lg-0 flex-column flex-md-row justify-content-between flex-lg-column flex-md-wrap ">
+
+                                    <div
+                                        class="fact-item  bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 ms-lg-auto z-1">
+                                        <div class="fact-icon top-right"><img src="./icons/84.png"
+                                                alt=""></div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-md-0">84</div>
+                                        <div class="fact-text fs-4 text-neutral-500 ">Happy Clients</div>
+                                    </div>
+
+                                    <div
+                                        class="fact-item  bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 mt-lg-n60">
+                                        <div class="fact-icon top-left"><img src="./images/project-complete-icon.svg"
+                                                alt=""></div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-md-0">123</div>
+                                        <div class="fact-text fs-4 text-neutral-500 ">Projects Completed</div>
+                                    </div>
+
+                                    <div
+                                        class="fact-item bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 ms-lg-auto me-lg-76 mt-lg-n3 z-1">
+                                        <div class="fact-icon top-right"><img src="./images/award-win-icon.svg" alt="">
+                                        </div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-md-0">37</div>
+                                        <div class="fact-text fs-4 text-neutral-500 ">Awards Win</div>
+                                    </div>
+
+                                    <div
+                                        class="fact-item bg-white position-relative shadow rounded-2 text-center text-lg-start p-30 ms-lg-50 mt-lg-n50">
+                                        <div class="fact-icon bottom-right"><img
+                                                src="./images/years-in-business-icon.svg" alt=""></div>
+                                        <div class="h1 text-neutral-800 fw-bold mt-3 mt-md-0">30</div>
+                                        <div class="fact-text fs-4 text-neutral-500 ">Years in Business</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center text-lg-start my-4 my-lg-0">
+                                <h2 class="mb-lg-40 mb-3 fs-2 fw-bold text-primary">30 Years Experience</h2>
+                                <p class="mb-lg-50 mb-3 text-neutral-600 fs-5">
+                                    Our company has been the leading provided construction services to clients
+                                    throughout the USA since
+                                    1988.
+                                </p>
+                                <a href="#" class="btn btn-primary fw-semibold fs-6 py-3 px-40 ">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ads">
+            <div class="py-4 py-md-100 bg-black w-100" style="--bs-bg-opacity: .7;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <div class="row align-items-center justify-content-between text-center text-md-start">
+                                <div class="col-12 col-md-8">
+                                    <h2 class="text-white fs-3 fw-bold mb-30">Free consultation with exceptional quality
+                                    </h2>
+                                    <p class="fs-4 text-white ">Just one call away : <a
+                                            class="text-decoration-none text-white text-nowrap"
+                                            href="tel:+8411022703">+84 1102 2703</a></p>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <a href="#"
+                                        class="btn btn-outline border-white text-white rounded-1 fw-semibold fs-6 py-3 px-20">Get
+                                        your consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects py-3 pt-md-88 pb-md-138">
+            <div class="container">
+                <h2 class="fs-3 fw-bold mb-40 text-center text-md-start">Projects</h2>
+                <div class="row align-items-start">
+                    <div class="col-12 col-md-4">
+                        <div class="nav pb-1 pb-md-0 justify-content-center  flex-md-column align-items-start"
+                            id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-all-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all"
+                                aria-selected="true"> All
+                            </button>
+
+                            <button class="nav-link" id="v-pills-commercial-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-commercial" type="button" role="tab"
+                                aria-controls="v-pills-commercial" aria-selected="false">Commercial
+                            </button>
+
+                            <button class="nav-link" id="v-pills-residential-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-residential" type="button" role="tab"
+                                aria-controls="v-pills-residential" aria-selected="false">Residential
+                            </button>
+
+                            <button class="nav-link" id="v-pills-other-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-other" type="button" role="tab" aria-controls="v-pills-other"
+                                aria-selected="false">Other
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="tab-content" id="v-pills-tabContent">
+
+                            <!-- All Project card -->
+                            <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel"
+                                aria-labelledby="v-pills-all-tab" tabindex="0">
+
+                                <div class="swiper mySwiper pb-5 pb-md-100">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wildstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wildstone Infra Hotel</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wishstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wish Stone Building</p>
+                                                    <p class="fs-6 mb-1">2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wildstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wildstone Infra Hotel</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wishstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wish Stone Building</p>
+                                                    <p class="fs-6 mb-1">2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="bottom-section position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+
+                                        <div
+                                            class="d-none  swiper-button-prev text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            <img src="./images/prev-btn.png" alt="">Back
+                                        </div>
+                                        <div
+                                            class="w-100 swiper-pagination position-static gap-1 gap-md-3 d-flex justify-content-center">
+                                        </div>
+                                        <div
+                                            class="d-none swiper-button-next text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            Next<img src="./images/next-btn.png" alt=""></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Commercial Project card -->
+                            <div class="tab-pane fade" id="v-pills-commercial" role="tabpanel"
+                                aria-labelledby="v-pills-commercial-tab" tabindex="0">
+
+                                <div class="swiper mySwiper pb-5 pb-md-100">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wildstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wildstone Infra Hotel</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wishstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wish Stone Building</p>
+                                                    <p class="fs-6 mb-1">2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wildstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wildstone Infra Hotel</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wishstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wish Stone Building</p>
+                                                    <p class="fs-6 mb-1">2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wildstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wildstone Infra Hotel</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wishstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wish Stone Building</p>
+                                                    <p class="fs-6 mb-1">2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wildstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wildstone Infra Hotel</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/wishstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Wish Stone Building</p>
+                                                    <p class="fs-6 mb-1">2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="bottom-section position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+
+                                        <div
+                                            class="d-none  swiper-button-prev text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            <img src="./images/prev-btn.png" alt="">Back
+                                        </div>
+                                        <div
+                                            class="w-100 swiper-pagination position-static gap-1 gap-md-3 d-flex justify-content-center">
+                                        </div>
+                                        <div
+                                            class="d-none swiper-button-next text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            Next<img src="./images/next-btn.png" alt=""></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Residential project card -->
+                            <div class="tab-pane fade" id="v-pills-residential" role="tabpanel"
+                                aria-labelledby="v-pills-residential-tab" tabindex="0">
+
+                                <div class="swiper mySwiper pb-5 pb-md-100">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/mr-parkinstone.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Mr. Parkinston’s House</p>
+                                                    <p class="fs-6 mb-1">2715 Ash Dr. San Jose, South Dakota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="bottom-section position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+
+                                        <div
+                                            class="d-none  swiper-button-prev text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            <img src="./images/prev-btn.png" alt="">Back
+                                        </div>
+                                        <div
+                                            class="w-100 swiper-pagination position-static gap-1 gap-md-3 d-flex justify-content-center">
+                                        </div>
+                                        <div
+                                            class="d-none swiper-button-next text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            Next<img src="./images/next-btn.png" alt=""></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Other project card -->
+                            <div class="tab-pane fade" id="v-pills-other" role="tabpanel"
+                                aria-labelledby="v-pills-other-tab" tabindex="0">
+
+                                <div class="swiper mySwiper pb-5 pb-md-100">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card rounded-0">
+                                                <img src="./images/oregano.jpg" class="card-img-top"
+                                                    alt="wildstone hotel image">
+                                                <div class="card-body bg-primary text-white p-12">
+                                                    <p class="fw-bold fs-5 mb-12">Oregano Height</p>
+                                                    <p class="fs-6 mb-1">2464 Royal Ln. Mesa, New Jersey </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="bottom-section position-absolute bottom-0 d-flex justify-content-between align-items-center w-100">
+
+                                        <div
+                                            class="d-none  swiper-button-prev text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            <img src="./images/prev-btn.png" alt="">Back
+                                        </div>
+                                        <div
+                                            class="w-100 swiper-pagination position-static gap-1 gap-md-3 d-flex justify-content-center">
+                                        </div>
+                                        <div
+                                            class="d-none swiper-button-next text-primary position-static m-0 d-md-flex align-items-center bg-neutral-800 w-100 text-white gap-2 py-20">
+                                            Next<img src="./images/next-btn.png" alt=""></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
 
+            </div>
+        </section>
 
+        <section class="contact-us bg-neutral-50 py-3 py-md-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <div>
+                            <h2 class="text-neutral-800 text-center fs-3 fw-bold mb-20 text-neutral-800">What can us do
+                                for you?</h2>
+                            <p class="fs-5 text-center mb-38 text text-neutral-800">We are ready to work on a project of
+                                any
+                                complexity, whether it’s commercial or residential.</p>
+                            <form class="">
+                                <div class="input-group mb-20 gap-4">
+                                    <input class="form-control" type="text" name="name" id="name"
+                                        placeholder="Your Name*">
+                                    <input class="form-control" type="email" name="email" id="email"
+                                        placeholder="Email*">
+                                </div>
+                                <div class="input-group mb-20 gap-4">
+                                    <select class="form-select" name="reason" id="reason">
+                                        <option value="">Reason for Contacting</option>
+                                    </select>
+                                    <input class="form-control" type="text" name="phone" placeholder="Phone">
+                                </div>
+                                <textarea class="form-control" name="message" id="message" placeholder="Message"
+                                    rows="4"></textarea>
+                                <div class="form-text mb-28">* indicates a required field</div>
+                                <div class="form-group text-center">
+                                    <input class="btn w-50 py-3 fs-6 fw-semibold btn-primary" type="submit"
+                                        value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row py-3 py-lg-84 justify-content-lg-between">
+                    <div class="col-lg-8">
+                        <address class="d-flex flex-column  gap-3 gap-lg-4 ">
+                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                                <p class="col-lg-2 text-primary fs-5 fw-medium my-0">ADDRESS:</p>
+                                <p class="fs-5 text-neutral-800 text-center my-0">6391 Elgin St. Celina, Delaware 10299
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                                <p class="col-lg-2 text-primary fs-5 fw-medium my-0">PHONE:</p>
+                                <p class="fs-5 text-neutral-800 text-center my-0">+84 1102 2703</p>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                                <p class="col-lg-2 text-primary fs-5 fw-medium my-0">EMAIL:</p>
+                                <p class="fs-5 text-neutral-800 text-center my-0">hello@thebox.com</p>
+                            </div>
+                        </address>
+                        <div class="logo d-flex justify-content-center justify-content-lg-start my-3">
+                            <img src="./images/logo.svg" alt="">
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4">
+                        <p class="fs-5 fw-medium text-primary mb-20 text-center text-lg-start my-0">Newsletter:</p>
+                        <form class="mb-lg-40 mb-3">
+                            <div class="d-flex flex-column flex-sm-row gap-2">
+                                <input class="form-control" type="email" name="email" id="email"
+                                    placeholder="Your email here">
+                                <input class="btn btn-accent text-white fs-6 fw-semibold" type="submit"
+                                    value="Subscribe">
+                            </div>
+                        </form>
+                        <p class="fs-5 fw-medium text-primary mb-20 text-center text-lg-start my-0">Social:</p>
+                        <div class="d-flex gap-4 justify-content-center justify-content-lg-start">
+                            <a class="link-icon" href="#" aria-label="go to facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="link-icon" href="#" aria-label="go to linkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="link-icon" href="#" aria-label="go to twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom bg-primary py-28">
+            <div class="container">
+                <p class="text-white fs-7 text-center text-lg-start">TheBox Company © 2022. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+                fill: 'row',
+            },
+            spaceBetween: 32,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                768: {
+                    slidesPerView: 1,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                992: {
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                1240: {
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+            },
+        });
+    </script>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
